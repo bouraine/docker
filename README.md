@@ -24,4 +24,8 @@ $env:http_proxy = "http://ip:port"
 $env:https_proxy = "http://ip:port"
 ``` 
 
+## Set a proxy on 
+
+`docker build --build-arg http_proxy=http://ip:port --build-arg https_proxy=http://ip:port -t myawesomeimage:latest`
+
 
