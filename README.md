@@ -28,4 +28,8 @@ $env:https_proxy = "http://ip:port"
 
 `docker build --build-arg http_proxy=http://ip:port --build-arg https_proxy=http://ip:port -t myawesomeimage:latest`
 
+## delete all <none> images
+
+`docker rmi $(docker images -f “dangling=true” -q)`
+
 
